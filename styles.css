@@ -320,3 +320,41 @@ button:hover{
     font-size:20px;
     letter-spacing:1px;
 }
+/* Ubicación */
+
+.ubicacion{
+    min-height:60vh;
+    background:#F8F4ED;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.ubicacion h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2F6F8F;
+    margin-bottom:30px;
+}
+
+.ubicacion p{
+    font-size:22px;
+    color:#6B7B87;
+    line-height:1.8;
+}
+
+.ubicacion a{
+    display:inline-block;
+    margin-top:25px;
+    background:#4E7F98;
+    color:white;
+    text-decoration:none;
+    padding:15px 40px;
+    border-radius:40px;
+    font-size:20px;
+    transition:.3s;
+}
+
+.ubicacion a:hover{
+    transform:translateY(-4px);
+    background:#3E6D84;
+}
