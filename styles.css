@@ -505,3 +505,62 @@ button:hover{
     }
 
 }
+/* Decoración marina dentro de la invitación */
+
+.decoracion-mar{
+    position:fixed;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:220px;
+    pointer-events:none;
+    z-index:3;
+    overflow:hidden;
+}
+
+
+.coral{
+    position:absolute;
+    bottom:0;
+    font-size:90px;
+}
+
+
+.coral1{
+    left:20px;
+}
+
+
+.coral2{
+    right:20px;
+}
+
+
+.cangrejo{
+    position:absolute;
+    bottom:20px;
+    left:40%;
+    font-size:55px;
+    animation:cangrejoCamina 8s infinite alternate;
+}
+
+
+.estrella{
+    position:absolute;
+    bottom:15px;
+    right:35%;
+    font-size:40px;
+}
+
+
+@keyframes cangrejoCamina{
+
+    from{
+        transform:translateX(-20px);
+    }
+
+    to{
+        transform:translateX(100px);
+    }
+
+}
