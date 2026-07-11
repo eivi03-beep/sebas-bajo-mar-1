@@ -16,7 +16,12 @@ body{
     justify-content:center;
     align-items:center;
     text-align:center;
-    background:#F8F4ED;
+    background:linear-gradient(
+    to bottom,
+    #F8F4ED 0%,
+    #E8F6F8 55%,
+    #B9DCE8 100%
+);
     position:relative;
     padding:20px;
 }
@@ -165,6 +170,7 @@ button:hover{
     height:120px;
     background:#8FC7D8;
     border-radius:50% 50% 0 0;
+    opacity:.8;
     z-index:1;
 }
 /* Animales marinos */
