@@ -589,3 +589,37 @@ button:hover{
     right:-60px;
     top:40px;
 }
+/* Burbujas alrededor de la foto */
+
+.burbuja-foto{
+    position:absolute;
+    font-size:35px;
+    z-index:3;
+    animation:flotarBurbuja 4s ease-in-out infinite;
+}
+
+
+.b1{
+    left:20px;
+    top:-25px;
+}
+
+
+.b2{
+    right:20px;
+    bottom:-20px;
+    animation-delay:2s;
+}
+
+
+@keyframes flotarBurbuja{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+
+}
