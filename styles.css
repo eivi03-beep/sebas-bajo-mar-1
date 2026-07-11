@@ -268,3 +268,55 @@ button:hover{
     font-size:22px;
     color:#6B7B87;
 }
+/* Cuenta regresiva */
+
+.cuenta{
+    min-height:60vh;
+    background:#E8F6F8;
+    text-align:center;
+    padding:60px 20px;
+}
+
+.cuenta h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2F6F8F;
+    margin-bottom:35px;
+}
+
+.contador{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.contador div{
+    background:white;
+    width:120px;
+    height:120px;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.contador span{
+    font-size:40px;
+    color:#2F6F8F;
+    font-weight:600;
+}
+
+.contador p{
+    margin:0;
+    font-size:16px;
+    color:#6B7B87;
+}
+
+.cuenta h3{
+    margin-top:35px;
+    color:#5B7E91;
+    font-size:20px;
+    letter-spacing:1px;
+}
