@@ -90,3 +90,80 @@ button:hover{
     }
 
 }
+/* Burbujas submarinas */
+
+.burbujas span{
+    position:absolute;
+    bottom:-100px;
+    width:35px;
+    height:35px;
+    border:2px solid rgba(255,255,255,.6);
+    border-radius:50%;
+    animation:subir 12s infinite;
+}
+
+.burbujas span:nth-child(1){
+    left:10%;
+    animation-delay:0s;
+}
+
+.burbujas span:nth-child(2){
+    left:30%;
+    width:20px;
+    height:20px;
+    animation-delay:3s;
+}
+
+.burbujas span:nth-child(3){
+    left:50%;
+    width:45px;
+    height:45px;
+    animation-delay:6s;
+}
+
+.burbujas span:nth-child(4){
+    left:70%;
+    width:25px;
+    height:25px;
+    animation-delay:2s;
+}
+
+.burbujas span:nth-child(5){
+    left:85%;
+    width:18px;
+    height:18px;
+    animation-delay:5s;
+}
+
+
+@keyframes subir{
+
+    0%{
+        transform:translateY(0);
+        opacity:0;
+    }
+
+    20%{
+        opacity:1;
+    }
+
+    100%{
+        transform:translateY(-110vh);
+        opacity:0;
+    }
+
+}
+
+
+/* Olas inferiores */
+
+.olas{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+    height:120px;
+    background:#8FC7D8;
+    border-radius:50% 50% 0 0;
+    z-index:1;
+}
