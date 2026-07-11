@@ -564,3 +564,28 @@ button:hover{
     }
 
 }
+/* Conchas alrededor de la foto */
+
+.marco-foto{
+    position:relative;
+    display:inline-block;
+}
+
+
+.concha-foto{
+    position:absolute;
+    font-size:55px;
+    z-index:2;
+}
+
+
+.izquierda{
+    left:-60px;
+    bottom:40px;
+}
+
+
+.derecha{
+    right:-60px;
+    top:40px;
+}
