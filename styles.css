@@ -358,3 +358,52 @@ button:hover{
     transform:translateY(-4px);
     background:#3E6D84;
 }
+/* Regalo / Sobre */
+
+.sobres{
+    min-height:55vh;
+    background:#E8F6F8;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.sobres h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2F6F8F;
+    margin-bottom:25px;
+}
+
+.sobres p{
+    color:#6B7B87;
+    font-size:21px;
+    line-height:1.7;
+}
+
+.opciones-regalo{
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    margin-top:35px;
+    flex-wrap:wrap;
+}
+
+.opciones-regalo div{
+    background:white;
+    width:160px;
+    height:160px;
+    border-radius:25px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    font-size:50px;
+}
+
+.opciones-regalo h3{
+    margin-top:10px;
+    color:#5B7E91;
+    font-size:22px;
+    letter-spacing:1px;
+}
