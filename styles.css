@@ -222,6 +222,8 @@ button:hover{
         transform:translateX(30px);
     }
 
+}
+
 @keyframes flotar{
 
     0%,100%{
@@ -232,6 +234,7 @@ button:hover{
         transform:translateY(-20px);
     }
 
+}
 }
 /* Sección bienvenida */
 
