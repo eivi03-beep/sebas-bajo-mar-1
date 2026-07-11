@@ -188,7 +188,7 @@ button:hover{
 .pez{
     position:absolute;
     font-size:55px;
-    animation:nadar 12s linear infinite;
+  animation:nadar 25s infinite linear;
 }
 
 .pez1{
@@ -214,16 +214,13 @@ button:hover{
 
 @keyframes nadar{
 
-    0%{
-        transform:translateX(-100px);
+    from{
+        transform:translateX(-30px);
     }
 
-    100%{
-        transform:translateX(110vw);
+    to{
+        transform:translateX(30px);
     }
-
-}
-
 
 @keyframes flotar{
 
