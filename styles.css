@@ -407,3 +407,42 @@ button:hover{
     font-size:22px;
     letter-spacing:1px;
 }
+/* Confirmación */
+
+.confirmacion{
+    min-height:55vh;
+    background:#E8F6F8;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.confirmacion h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2F6F8F;
+    margin-bottom:25px;
+}
+
+.confirmacion p{
+    font-size:22px;
+    color:#6B7B87;
+    line-height:1.7;
+}
+
+.confirmacion a{
+    display:inline-block;
+    margin-top:30px;
+    background:#4E7F98;
+    color:white;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:40px;
+    font-size:20px;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+.confirmacion a:hover{
+    transform:translateY(-4px);
+    background:#3E6D84;
+}
