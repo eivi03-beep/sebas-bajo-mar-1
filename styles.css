@@ -188,29 +188,36 @@ button:hover{
 .pez{
     position:absolute;
     font-size:55px;
-  animation:nadar 25s infinite linear;
+    animation:nadar 25s infinite linear;
 }
 
 .pez1{
-    top:25%;
-    left:-80px;
+    top:35%;
+    left:5%;
 }
 
 .pez2{
-    top:60%;
-    left:-100px;
+    top:55%;
+    right:5%;
     font-size:45px;
     animation-delay:4s;
 }
 
 .tortuga{
     position:absolute;
-    right:10%;
-    bottom:25%;
+    right:15%;
+    bottom:15%;
     font-size:75px;
     animation:flotar 5s ease-in-out infinite;
 }
 
+
+/* Mantener animales dentro de la invitación */
+
+.bienvenida{
+    position:relative;
+    overflow:hidden;
+}
 
 @keyframes nadar{
 
@@ -243,6 +250,8 @@ button:hover{
     background:#F8F4ED;
     text-align:center;
     padding:70px 20px;
+    position:relative;
+    overflow:hidden;
 }
 
 .bienvenida img{
