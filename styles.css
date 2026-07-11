@@ -236,3 +236,35 @@ button:hover{
     }
 
 }
+/* Sección bienvenida */
+
+.bienvenida{
+    min-height:100vh;
+    background:#F8F4ED;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.bienvenida img{
+    width:320px;
+    height:320px;
+    object-fit:cover;
+    border-radius:50%;
+    border:8px solid white;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    margin-bottom:30px;
+}
+
+.bienvenida h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2F6F8F;
+    margin-bottom:20px;
+}
+
+.bienvenida p{
+    max-width:600px;
+    margin:auto;
+    font-size:22px;
+    color:#6B7B87;
+}
