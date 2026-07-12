@@ -451,4 +451,13 @@ button:hover{
         transform:translateY(-15px);
     }
 }
-
+.despedida{
+    margin-top:35px;
+    font-size:22px;
+    color:#5B7E91;
+    line-height:1.7;
+    text-align:center;
+    max-width:600px;
+    margin-left:auto;
+    margin-right:auto;
+}
