@@ -399,35 +399,6 @@ button:hover{
     overflow:hidden;
 }
 
-.coral{
-    position:absolute;
-    font-size:70px;
-}
-
-.coral1{
-    bottom:40px;
-    left:30px;
-}
-
-.coral2{
-    bottom:40px;
-    right:30px;
-}
-
-.alga{
-    position:absolute;
-    bottom:0;
-    font-size:90px;
-}
-
-.alga1{
-    left:5%;
-}
-
-.alga2{
-    right:5%;
-}
-
 .marco-foto{
     position:relative;
     display:inline-block;
