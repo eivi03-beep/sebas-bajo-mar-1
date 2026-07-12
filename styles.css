@@ -567,13 +567,13 @@ button:hover{
 
 .decoracion-mar{
     position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
+    bottom:0;
     left:0;
+    width:100%;
+    height:220px;
     pointer-events:none;
-    overflow:hidden;
     z-index:1;
+    overflow:hidden;
 }
 
 .coral{
@@ -617,23 +617,6 @@ button:hover{
 
 .alga2{
     right:5%;
-}
-
-.pez{
-    position:absolute;
-    font-size:55px;
-    animation:nadar 12s infinite linear;
-}
-
-.pez1{
-    top:25%;
-    left:-80px;
-}
-
-.pez2{
-    top:45%;
-    right:-80px;
-    animation-delay:5s;
 }
 
 .tortuga{
