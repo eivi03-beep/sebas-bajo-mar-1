@@ -216,7 +216,7 @@ button:hover{
 
 .cuenta{
     min-height:60vh;
-    background-image:url("./fondo-invitacion.png") !important;
+    background-image:url("fondo-invitacion.png") !important;
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
