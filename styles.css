@@ -466,8 +466,8 @@ button:hover{
 }
 .fondo-invitacion{
     background-image:url("fondo-invitacion.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    min-height:100vh;
+    background-size:100% auto;
+    background-position:top center;
+    background-repeat:repeat-y;
+    min-height:100%;
 }
