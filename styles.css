@@ -390,183 +390,6 @@ button:hover{
 
 .decoracion-mar{
     position:absolute;
-    width:100%;
-    height:100%;
-    top:0;
-    left:0;
-    pointer-events:none;
-    z-index:1;
-}
-
-
-.coral{
-    position:absolute;
-    font-size:90px;
-    bottom:20px;
-}
-
-
-.coral1{
-    left:5%;
-}
-
-
-.coral2{
-    right:8%;
-    transform:scaleX(-1);
-}
-
-
-.cangrejo{
-    position:absolute;
-    bottom:25px;
-    left:35%;
-    font-size:55px;
-    animation:caminando 8s infinite alternate;
-}
-
-
-.estrella{
-    position:absolute;
-    bottom:30px;
-    right:30%;
-    font-size:45px;
-}
-
-
-@keyframes caminando{
-
-    from{
-        transform:translateX(0);
-    }
-
-    to{
-        transform:translateX(120px);
-    }
-
-}
-/* Decoración marina dentro de la invitación */
-
-.decoracion-mar{
-    position:fixed;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:220px;
-    pointer-events:none;
-    z-index:3;
-    overflow:hidden;
-}
-
-
-.coral{
-    position:absolute;
-    bottom:0;
-    font-size:90px;
-}
-
-
-.coral1{
-    left:20px;
-}
-
-
-.coral2{
-    right:20px;
-}
-
-
-.cangrejo{
-    position:absolute;
-    bottom:20px;
-    left:40%;
-    font-size:55px;
-    animation:cangrejoCamina 8s infinite alternate;
-}
-
-
-.estrella{
-    position:absolute;
-    bottom:15px;
-    right:35%;
-    font-size:40px;
-}
-
-
-@keyframes cangrejoCamina{
-
-    from{
-        transform:translateX(-20px);
-    }
-
-    to{
-        transform:translateX(100px);
-    }
-
-}
-/* Conchas alrededor de la foto */
-
-.marco-foto{
-    position:relative;
-    display:inline-block;
-}
-
-
-.concha-foto{
-    position:absolute;
-    font-size:55px;
-    z-index:2;
-}
-
-
-.izquierda{
-    left:-60px;
-    bottom:40px;
-}
-
-
-.derecha{
-    right:-60px;
-    top:40px;
-}
-/* Burbujas alrededor de la foto */
-
-.burbuja-foto{
-    position:absolute;
-    font-size:35px;
-    z-index:3;
-    animation:flotarBurbuja 4s ease-in-out infinite;
-}
-
-
-.b1{
-    left:20px;
-    top:-25px;
-}
-
-
-.b2{
-    right:20px;
-    bottom:-20px;
-    animation-delay:2s;
-}
-
-
-@keyframes flotarBurbuja{
-
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-15px);
-    }
-
-}
-/* Decoración submarina */
-
-.decoracion-mar{
-    position:absolute;
     bottom:0;
     left:0;
     width:100%;
@@ -587,22 +410,8 @@ button:hover{
 }
 
 .coral2{
-    bottom:50px;
-    right:40px;
-}
-
-.cangrejo{
-    position:absolute;
-    bottom:70px;
-    left:15%;
-    font-size:55px;
-}
-
-.estrella{
-    position:absolute;
-    top:120px;
-    right:15%;
-    font-size:45px;
+    bottom:40px;
+    right:30px;
 }
 
 .alga{
@@ -619,21 +428,52 @@ button:hover{
     right:5%;
 }
 
-.tortuga{
+.marco-foto{
+    position:relative;
+    display:inline-block;
+}
+
+.concha-foto{
     position:absolute;
-    font-size:70px;
-    bottom:25%;
-    left:10%;
+    font-size:55px;
+    z-index:2;
 }
 
-@keyframes nadar{
-
-    from{
-        transform:translateX(-100px);
-    }
-
-    to{
-        transform:translateX(110vw);
-    }
-
+.izquierda{
+    left:-60px;
+    bottom:40px;
 }
+
+.derecha{
+    right:-60px;
+    top:40px;
+}
+
+.burbuja-foto{
+    position:absolute;
+    font-size:35px;
+    z-index:3;
+    animation:flotarBurbuja 4s ease-in-out infinite;
+}
+
+.b1{
+    left:20px;
+    top:-25px;
+}
+
+.b2{
+    right:20px;
+    bottom:-20px;
+    animation-delay:2s;
+}
+
+@keyframes flotarBurbuja{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-15px);
+    }
+}
+
