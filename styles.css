@@ -178,7 +178,11 @@ button:hover{
 
 .bienvenida{
     min-height:100vh;
-    background:#F8F4ED;
+    background:linear-gradient(
+        to bottom,
+        #B9DCE8,
+        #E8F6F8
+    );
     text-align:center;
     padding:70px 20px;
     position:relative;
