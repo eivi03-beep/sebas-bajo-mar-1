@@ -465,9 +465,9 @@ button:hover{
     margin-right:auto;
 }
 .fondo-invitacion{
-    background-image:url("fondo-invitacion.png");
+    background-image:url("fondo-mar.png");
     background-size:cover;
-    background-position:center top;
-    background-repeat:repeat-y;
+    background-position:center;
+    background-repeat:no-repeat;
     min-height:100vh;
 }
