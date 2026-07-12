@@ -216,10 +216,7 @@ button:hover{
 
 .cuenta{
     min-height:60vh;
-    background:transparent;
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background:#E8F6F8;
     text-align:center;
     padding:60px 20px;
 }
@@ -271,7 +268,7 @@ button:hover{
 
 .ubicacion{
     min-height:60vh;
-    background:transparent;
+    background:#F8F4ED;
     text-align:center;
     padding:70px 20px;
 }
@@ -309,7 +306,7 @@ button:hover{
 
 .sobres{
     min-height:55vh;
-    background:transparent;
+    background:#E8F6F8;
     text-align:center;
     padding:70px 20px;
 }
@@ -358,7 +355,7 @@ button:hover{
 
 .confirmacion{
     min-height:55vh;
-    background:transparent;
+    background:#E8F6F8;
     text-align:center;
     padding:70px 20px;
 }
@@ -464,10 +461,4 @@ button:hover{
     margin-left:auto;
     margin-right:auto;
 }
-.fondo-invitacion{
-    background-image:url("fondo-mar.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    min-height:100vh;
-}
+
