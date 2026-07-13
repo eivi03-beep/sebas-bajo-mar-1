@@ -178,11 +178,7 @@ button:hover{
 
 .bienvenida{
     min-height:100vh;
-    background:linear-gradient(
-        to bottom,
-        #B9DCE8,
-        #E8F6F8
-    );
+   background:transparent;
     text-align:center;
     padding:70px 20px;
     position:relative;
@@ -462,3 +458,9 @@ button:hover{
     margin-right:auto;
 }
 
+.fondo-invitacion{
+    background-image:url("fondo-invitacion.png");
+    background-size:cover;
+    background-position:center top;
+    background-repeat:repeat-y;
+}
