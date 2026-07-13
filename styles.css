@@ -6,7 +6,10 @@
 
 body{
     font-family:'Poppins',sans-serif;
-    background:#F8F4ED;
+    background-image:url("assets/fondo-invitacion.png");
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
     overflow-x:hidden;
 }
 
@@ -218,7 +221,7 @@ button:hover{
 
 .cuenta{
     min-height:60vh;
-    background:#E8F6F8;
+    background:transparent;
     text-align:center;
     padding:60px 20px;
 }
@@ -270,7 +273,7 @@ button:hover{
 
 .ubicacion{
     min-height:60vh;
-    background:#F8F4ED;
+    background:transparent;
     text-align:center;
     padding:70px 20px;
 }
@@ -308,7 +311,7 @@ button:hover{
 
 .sobres{
     min-height:55vh;
-    background:#E8F6F8;
+    background:transparent;
     text-align:center;
     padding:70px 20px;
 }
@@ -357,7 +360,7 @@ button:hover{
 
 .confirmacion{
     min-height:55vh;
-    background:#E8F6F8;
+    background:transparent;
     text-align:center;
     padding:70px 20px;
 }
