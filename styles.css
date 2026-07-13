@@ -180,7 +180,7 @@ button:hover{
 /* Sección bienvenida */
 
 .bienvenida{
-    min-height:180vh;
+    min-height:300vh;
     text-align:center;
     padding:70px 20px;
     position:relative;
@@ -190,7 +190,7 @@ button:hover{
 .fondo-invitacion{
     background-image:url("assets/fondo-invitacion.png");
     background-size:100% 100%;
-    background-position:center;
+    background-position:center top;
     background-repeat:no-repeat;
 }
 
