@@ -178,14 +178,18 @@ button:hover{
 
 .bienvenida{
     min-height:100vh;
-    background-image:url("assets/fondo-invitacion.png");
-    background-size:cover;
-    background-position:center top;
-    background-repeat:no-repeat;
+    background:transparent;
     text-align:center;
     padding:70px 20px;
     position:relative;
     overflow:hidden;
+}
+
+.fondo-invitacion{
+    background-image:url("assets/fondo-invitacion.png");
+    background-size:cover;
+    background-position:center top;
+    background-repeat:no-repeat;
 }
 
 .bienvenida img{
