@@ -1,6 +1,5 @@
 /* ==========================
-   SEBASTIÁN BAJO EL MAR
-   DISEÑO INVITACIÓN MARINA
+   ESTILOS GENERALES
 ========================== */
 
 *{
@@ -9,16 +8,20 @@
     box-sizing:border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+body{
+
+    font-family:'Poppins', sans-serif;
+    background:#f8f0df;
+    color:#12344d;
+
 }
 
-body{
-    font-family:'Poppins',sans-serif;
-    background:#eaf9ff;
-    color:#35556a;
-    overflow-x:hidden;
+
+section{
+    width:100%;
+    overflow:hidden;
 }
+
 
 
 /* ==========================
@@ -27,402 +30,66 @@ body{
 
 .portada{
 
-    position:relative;
-    min-height:100vh;
-    width:100%;
+    height:100vh;
+    min-height:700px;
+
+    background-image:url("assets/fondo-mar.png");
+    background-size:cover;
+    background-position:center;
 
     display:flex;
     justify-content:center;
-    align-items:flex-start;
+    align-items:center;
 
     text-align:center;
 
-    padding:60px 20px 120px;
-
-    overflow:hidden;
-
-    background:
-    linear-gradient(
-    rgba(255,255,255,.25),
-    rgba(255,255,255,.15)
-    ),
-    url("assets/fondo-mar.png")
-    center/cover no-repeat;
-
-}
-
-
-/* contenido principal */
-
-.contenido{
-
     position:relative;
-    z-index:5;
-
-    width:100%;
-    max-width:700px;
 
 }
 
 
 
-/* textos */
+.contenido-portada{
 
-.contenido h3{
+    width:90%;
+    max-width:600px;
 
-    font-size:18px;
-    letter-spacing:5px;
-    color:#47788f;
+    color:white;
 
+    text-shadow:
+    0 3px 10px rgba(0,0,0,.5);
+
+}
+
+
+
+.contenido-portada h3{
+
+    font-size:20px;
+    letter-spacing:3px;
     margin-bottom:15px;
 
 }
 
 
-.contenido h1{
 
-    font-family:'Great Vibes',cursive;
+.contenido-portada h1{
+
+    font-family:'Great Vibes', cursive;
 
     font-size:90px;
 
-    color:#17658a;
-
-    line-height:1;
+    font-weight:400;
 
     margin-bottom:5px;
 
 }
 
 
-.contenido h2{
 
-    font-size:55px;
-
-    color:#17658a;
-
-    margin-bottom:15px;
-
-}
-
-
-.contenido p{
-
-    font-size:21px;
-
-    line-height:1.7;
-
-    max-width:550px;
-
-    margin:auto;
-
-    color:#527083;
-
-}
-
-
-/* boton */
-
-#entrar{
-
-    margin-top:35px;
-
-    padding:18px 45px;
-
-    border:none;
-
-    border-radius:50px;
-
-    background:#3180a5;
-
-    color:white;
-
-    font-size:19px;
-
-    cursor:pointer;
-
-    box-shadow:
-    0 12px 25px rgba(0,0,0,.18);
-
-    transition:.3s;
-
-}
-
-
-#entrar:hover{
-
-    transform:translateY(-5px);
-
-    background:#24647f;
-
-}
-
-
-
-/* ==========================
-   BURBUJAS
-========================== */
-
-
-.burbujas{
-
-    position:absolute;
-
-    inset:0;
-
-    overflow:hidden;
-
-}
-
-
-.burbujas span{
-
-    position:absolute;
-
-    bottom:-100px;
-
-    width:30px;
-
-    height:30px;
-
-    border-radius:50%;
-
-    border:2px solid rgba(255,255,255,.7);
-
-    animation:subir 15s infinite linear;
-
-}
-
-
-.burbujas span:nth-child(1){
-
-    left:10%;
-
-}
-
-
-.burbujas span:nth-child(2){
-
-    left:25%;
-
-    animation-delay:3s;
-
-}
-
-
-.burbujas span:nth-child(3){
-
-    left:45%;
-
-    animation-delay:6s;
-
-}
-
-
-.burbujas span:nth-child(4){
-
-    left:65%;
-
-    animation-delay:2s;
-
-}
-
-
-.burbujas span:nth-child(5){
-
-    left:80%;
-
-    animation-delay:5s;
-
-}
-
-
-.burbujas span:nth-child(6){
-
-    left:92%;
-
-    animation-delay:8s;
-
-}
-
-
-
-@keyframes subir{
-
-from{
-
-transform:translateY(0);
-
-opacity:0;
-
-}
-
-
-20%{
-
-opacity:1;
-
-}
-
-
-to{
-
-transform:translateY(-120vh);
-
-opacity:0;
-
-}
-
-}
-
-
-
-/* ==========================
-   OLAS INFERIORES
-========================== */
-
-
-.olas{
-
-    position:absolute;
-
-    bottom:-1px;
-
-    left:0;
-
-    width:100%;
-
-    height:120px;
-
-    background:#8ed9ea;
-
-    border-radius:50% 50% 0 0;
-
-    opacity:.85;
-
-}
-
-/* ==========================
-   CONTENIDO MARINO
-========================== */
-
-
-.contenido-marino{
-
-    position:relative;
-
-    background:
-
-    linear-gradient(
-    to bottom,
-    #eaf9ff,
-    #c8edf8,
-    #a8dfef
-    );
-
-    overflow:hidden;
-
-}
-
-
-
-/* ==========================
-   BIENVENIDA FOTO ARRIBA
-========================== */
-
-
-.bienvenida{
-
-    text-align:center;
-
-    padding:70px 20px 60px;
-
-}
-
-
-
-.marco-foto{
-
-    position:relative;
-
-    display:inline-block;
-
-    margin-bottom:35px;
-
-}
-
-
-
-.marco-foto img{
-
-    width:340px;
-
-    height:340px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:12px solid white;
-
-    box-shadow:
-
-    0 15px 40px rgba(0,0,0,.20);
-
-}
-
-
-
-.concha{
-
-    position:absolute;
-
-    font-size:60px;
-
-}
-
-
-
-.izquierda{
-
-    left:-65px;
-
-    bottom:20px;
-
-}
-
-
-
-.derecha{
-
-    right:-65px;
-
-    top:20px;
-
-}
-
-
-
-.estrella{
-
-    position:absolute;
-
-    right:0;
-
-    bottom:-20px;
+.contenido-portada h2{
 
     font-size:45px;
-
-}
-
-
-
-.bienvenida h2{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:65px;
-
-    color:#17658a;
 
     margin-bottom:20px;
 
@@ -430,44 +97,11 @@ opacity:0;
 
 
 
-.bienvenida p{
+.contenido-portada p{
 
-    max-width:650px;
+    font-size:18px;
 
-    margin:auto;
-
-    font-size:22px;
-
-    line-height:1.8;
-
-    color:#547083;
-
-}
-
-
-
-/* ==========================
-   CUENTA REGRESIVA
-========================== */
-
-
-.cuenta{
-
-    text-align:center;
-
-    padding:70px 20px;
-
-}
-
-
-
-.cuenta h2{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:60px;
-
-    color:#17658a;
+    line-height:1.5;
 
     margin-bottom:35px;
 
@@ -475,246 +109,45 @@ opacity:0;
 
 
 
-.contador{
+.contenido-portada button{
 
-    display:flex;
+    padding:15px 35px;
 
-    justify-content:center;
-
-    flex-wrap:wrap;
-
-    gap:20px;
-
-}
-
-
-
-.contador div{
-
-    background:white;
-
-    width:120px;
-
-    height:120px;
-
-    border-radius:25px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:center;
-
-    align-items:center;
-
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
-
-}
-
-
-
-.contador span{
-
-    font-size:42px;
-
-    font-weight:bold;
-
-    color:#17658a;
-
-}
-
-
-
-.contador p{
-
-    color:#627887;
-
-}
-
-
-
-.cuenta h3{
-
-    margin-top:35px;
-
-    color:#527083;
-
-    line-height:1.8;
-
-}
-
-
-
-/* ==========================
-   SECCIONES GENERALES
-========================== */
-
-
-.ubicacion,
-.regalo,
-.confirmacion{
-
-    text-align:center;
-
-    padding:70px 20px;
-
-}
-
-
-
-.ubicacion h2,
-.regalo h2,
-.confirmacion h2{
-
-    font-family:'Great Vibes',cursive;
-
-    font-size:60px;
-
-    color:#17658a;
-
-    margin-bottom:25px;
-
-}
-
-
-
-.ubicacion p,
-.regalo p,
-.confirmacion p{
-
-    font-size:21px;
-
-    line-height:1.8;
-
-    color:#547083;
-
-}
-
-
-
-.ubicacion a,
-.confirmacion a{
-
-    display:inline-block;
-
-    margin-top:30px;
-
-    padding:16px 40px;
+    border:none;
 
     border-radius:40px;
 
-    text-decoration:none;
+    background:white;
 
-    color:white;
+    color:#087ea4;
 
-    background:#3180a5;
+    font-size:18px;
 
-    transition:.3s;
+    font-weight:600;
 
-}
+    cursor:pointer;
 
-
-
-.confirmacion a{
-
-    background:#25D366;
-
-}
-
-
-
-.ubicacion a:hover,
-.confirmacion a:hover{
-
-    transform:translateY(-4px);
-
-}
-
-
-
-.despedida{
-
-    margin-top:40px;
+    box-shadow:0 5px 15px rgba(0,0,0,.3);
 
 }
 
 
 
 /* ==========================
-   CELULAR
+   SECCIÓN INVITACIÓN
 ========================== */
 
 
-@media(max-width:768px){
+.invitacion{
 
+    background-image:url("assets/fondo-invitacion.png");
 
-.contenido h1{
+    background-size:cover;
 
-    font-size:65px;
+    background-position:center;
 
-}
+    padding:60px 20px;
 
-
-.contenido h2{
-
-    font-size:42px;
-
-}
-
-
-.contenido p{
-
-    font-size:18px;
-
-}
-
-
-
-.marco-foto img{
-
-    width:260px;
-
-    height:260px;
-
-}
-
-
-
-.concha{
-
-    display:none;
-
-}
-
-
-
-.bienvenida h2,
-.cuenta h2,
-.ubicacion h2,
-.regalo h2,
-.confirmacion h2{
-
-    font-size:48px;
-
-}
-
-
-
-.contador div{
-
-    width:95px;
-
-    height:95px;
-
-}
-
-
-
-.contador span{
-
-    font-size:30px;
-
-}
-
+    text-align:center;
 
 }
