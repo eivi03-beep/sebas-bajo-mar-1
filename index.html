@@ -13,13 +13,15 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<audio id="sonidoOlas" loop>
+<!-- Audios -->
+
+<audio id="sonidoOlas" preload="auto">
     <source src="assets/audio/olas.mp3" type="audio/mp3">
 </audio>
 
@@ -27,17 +29,22 @@
     <source src="assets/audio/bajo-el-mar.mp3" type="audio/mp3">
 </audio>
 
+<!-- ========================= -->
+<!-- PORTADA -->
+<!-- ========================= -->
+
 <section class="portada">
 
 <div class="burbujas">
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-</div>
 
-<div class="olas"></div>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+
+</div>
 
 <div class="contenido">
 
@@ -48,93 +55,140 @@
 <h2>Sebastián</h2>
 
 <p>
-Una aventura submarina para celebrar mi primer añito
+Una aventura submarina para celebrar
+mi primer añito.
 </p>
 
 <button id="entrar">
-🐚 Entrar a la Fiesta
+
+🐚 Entrar a la aventura
+
 </button>
 
 </div>
 
+<div class="olas"></div>
+
 </section>
 
-<section class="bienvenida fondo-invitacion">
+<!-- ========================= -->
+<!-- CONTENIDO -->
+<!-- ========================= -->
+
+<main class="contenido-marino">
+
+<!-- Bienvenida -->
+
+<section class="bienvenida">
 
 <div class="marco-foto">
 
-<div class="burbuja-foto b1">🫧</div>
-<div class="burbuja-foto b2">🫧</div>
-
-<div class="concha-foto izquierda">
-🐚
-</div>
+<div class="concha izquierda">🐚</div>
 
 <img src="assets/img/foto-sebastian.jpg" alt="Sebastián">
 
-<div class="concha-foto derecha">
-🐚
-</div>
+<div class="concha derecha">🐚</div>
+
+<div class="estrella">⭐</div>
 
 </div>
 
 <h2>
-¡Mi primer cumpleaños!
+
+¡Mi Primer Cumpleaños!
+
 </h2>
 
 <p>
-Gracias por acompañarme en esta aventura
+
+Gracias por acompañarme
+en esta gran aventura
 bajo el mar.
+
 </p>
+
+</section>
+
+<!-- Cuenta -->
 
 <section class="cuenta">
 
 <h2>
+
 Faltan...
+
 </h2>
 
 <div class="contador">
 
 <div>
+
 <span id="dias">00</span>
+
 <p>Días</p>
+
 </div>
 
 <div>
+
 <span id="horas">00</span>
+
 <p>Horas</p>
+
 </div>
 
 <div>
+
 <span id="minutos">00</span>
+
 <p>Minutos</p>
+
 </div>
 
 <div>
+
 <span id="segundos">00</span>
+
 <p>Segundos</p>
+
 </div>
 
 </div>
 
 <h3>
+
 📅 Martes 25 de agosto de 2026
+
 <br>
+
 🕒 3:00 PM
+
 </h3>
 
 </section>
-    
+
+<!-- Ubicación -->
+
 <section class="ubicacion">
 
 <h2>
+
 ¿Dónde será la aventura?
+
 </h2>
 
 <p>
-📍 Emiliano Zapata 303<br>
-Alejandro Briones<br>
-89602 Altamira, Tamaulipas
+
+📍 Emiliano Zapata 303
+
+<br>
+
+Alejandro Briones
+
+<br>
+
+Altamira, Tamaulipas
+
 </p>
 
 <a href="https://maps.google.com/?q=Emiliano+Zapata+303+Alejandro+Briones+Altamira+Tamaulipas" target="_blank">
@@ -145,44 +199,48 @@ Alejandro Briones<br>
 
 </section>
 
-<section class="sobres">
+<!-- Regalo -->
+
+<section class="regalo">
 
 <h2>
-Regalo
+
+Lluvia de Sobres
+
 </h2>
 
 <p>
-Tu presencia es el mejor regalo para mí.
+
+Tu presencia será mi mejor regalo.
+
 <br>
-Si deseas obsequiarme algo, puedes hacerlo en:
+
+Si deseas obsequiarme algo,
+
+podrás hacerlo en un sobre.
+
+💌
+
 </p>
 
-<div class="opciones-regalo">
-
-<div>
-💌
-<h3>Sobre</h3>
-</div>
-
-<div>
-🎁
-<h3>Regalo</h3>
-</div>
-
-</div>
-
 </section>
+
+<!-- Confirmación -->
 
 <section class="confirmacion">
 
 <h2>
-Confirmar asistencia
+
+Confirma tu asistencia
+
 </h2>
 
 <p>
-¡Nos encantará celebrar contigo!
-<br>
-Por favor confirma tu asistencia.
+
+Será un gusto compartir
+
+este día contigo.
+
 </p>
 
 <a href="https://wa.me/528334532709?text=Hola,%20confirmo%20mi%20asistencia%20al%20cumpleaños%20de%20Sebastián" target="_blank">
@@ -192,17 +250,23 @@ Por favor confirma tu asistencia.
 </a>
 
 <p class="despedida">
-Gracias por acompañarnos en este día tan especial.
-<br>
-Esperamos compartir contigo esta hermosa aventura
-bajo el mar. 🌊🐚⭐
+
+¡Te esperamos para vivir
+
+una gran aventura
+
+bajo el mar!
+
+🌊🐚⭐
+
 </p>
 
 </section>
 
-</section>
+</main>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
