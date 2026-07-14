@@ -36,7 +36,7 @@ section{
     height:100vh;
     min-height:700px;
 
-    background-image:url("assets/fondo-marino.png");
+    background-image:url("fondo-mar.png");
 
     background-size:cover;
 
@@ -149,7 +149,7 @@ section{
 
 .invitacion{
 
-    background-image:url("assets/fondo-invitacion.png");
+   background-image:url("fondo-invitacion.png");
 
     background-size:cover;
 
