@@ -116,3 +116,29 @@ if (botonEntrar) {
     });
 
 }
+
+// BOTON ENTRAR
+
+document.addEventListener("DOMContentLoaded", function(){
+
+    const boton = document.getElementById("entrar");
+
+    if(boton){
+
+        boton.onclick = function(){
+
+            const destino = document.querySelector(".contenido-marino");
+
+            if(destino){
+
+                destino.scrollIntoView({
+                    behavior:"smooth"
+                });
+
+            }
+
+        };
+
+    }
+
+});
