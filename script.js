@@ -1,48 +1,53 @@
-// ===============================
-// INVITACIÓN SEBASTIÁN BAJO EL MAR
-// Funciones: música, olas y cuenta regresiva
-// ===============================
+/* ==========================
+   ENTRAR A LA FIESTA
+========================== */
 
-
-// 🎵 Música de entrada
-window.addEventListener("load", () => {
+function entrarFiesta(){
 
     const musica = document.getElementById("musica");
-
-    if (musica) {
-        musica.volume = 0.5;
-
-        musica.play().catch(() => {
-            console.log("El navegador espera interacción del usuario para iniciar la música.");
-        });
-    }
-
-
-    // 🌊 Sonido de olas
     const olas = document.getElementById("olas");
 
-    if (olas) {
-        olas.volume = 0.4;
+    if(musica){
 
-        olas.play().catch(() => {
-            console.log("El navegador espera interacción para iniciar las olas.");
-        });
+        musica.play();
+
     }
 
-});
+    if(olas){
+
+        olas.play();
+
+    }
+
+
+    document.querySelector(".invitacion")
+    .scrollIntoView({
+
+        behavior:"smooth"
+
+    });
+
+}
 
 
 
-// ⏳ Cuenta regresiva automática
+/* ==========================
+   CUENTA REGRESIVA
+========================== */
 
-const fechaEvento = new Date("August 25, 2026 15:00:00").getTime();
+
+const fechaFiesta = new Date("August 25, 2026 15:00:00").getTime();
 
 
-const contador = setInterval(() => {
+
+const contador = setInterval(function(){
+
 
     const ahora = new Date().getTime();
 
-    const distancia = fechaEvento - ahora;
+
+    const distancia = fechaFiesta - ahora;
+
 
 
     const dias = Math.floor(
@@ -68,77 +73,63 @@ const contador = setInterval(() => {
     );
 
 
+
     document.getElementById("dias").innerHTML = dias;
+
     document.getElementById("horas").innerHTML = horas;
+
     document.getElementById("minutos").innerHTML = minutos;
+
     document.getElementById("segundos").innerHTML = segundos;
 
 
 
-    if (distancia < 0) {
+},1000);
 
-        clearInterval(contador);
+/* ==========================
+   MÚSICA AUTOMÁTICA AL TOCAR
+========================== */
 
-        document.getElementById("contador").innerHTML =
-        "🎉 ¡El gran día llegó!";
+
+document.addEventListener("click", function(){
+
+    const musica = document.getElementById("musica");
+    const olas = document.getElementById("olas");
+
+
+    if(musica && musica.paused){
+
+        musica.play();
 
     }
 
 
-}, 1000);
+    if(olas && olas.paused){
 
-// ===============================
-// BOTÓN ENTRAR A LA AVENTURA
-// ===============================
+        olas.play();
 
-const botonEntrar = document.getElementById("entrar");
+    }
 
-if (botonEntrar) {
 
-    botonEntrar.addEventListener("click", () => {
+},{once:true});
 
-        const sonidoOlas = document.getElementById("sonidoOlas");
-        const musica = document.getElementById("musica");
 
-        if(sonidoOlas){
-            sonidoOlas.play();
-        }
 
-        if(musica){
-            musica.play();
-        }
+/* ==========================
+   SI TERMINA EL CONTADOR
+========================== */
 
-        document.querySelector(".contenido-marino")
-        .scrollIntoView({
-            behavior:"smooth"
-        });
 
-    });
+if(fechaFiesta < new Date().getTime()){
+
+
+    document.getElementById("dias").innerHTML = "0";
+
+    document.getElementById("horas").innerHTML = "0";
+
+    document.getElementById("minutos").innerHTML = "0";
+
+    document.getElementById("segundos").innerHTML = "0";
+
 
 }
-
-// BOTON ENTRAR
-
-document.addEventListener("DOMContentLoaded", function(){
-
-    const boton = document.getElementById("entrar");
-
-    if(boton){
-
-        boton.onclick = function(){
-
-            const destino = document.querySelector(".contenido-marino");
-
-            if(destino){
-
-                destino.scrollIntoView({
-                    behavior:"smooth"
-                });
-
-            }
-
-        };
-
-    }
-
-});
