@@ -86,3 +86,33 @@ const contador = setInterval(() => {
 
 
 }, 1000);
+
+// ===============================
+// BOTÓN ENTRAR A LA AVENTURA
+// ===============================
+
+const botonEntrar = document.getElementById("entrar");
+
+if (botonEntrar) {
+
+    botonEntrar.addEventListener("click", () => {
+
+        const sonidoOlas = document.getElementById("sonidoOlas");
+        const musica = document.getElementById("musica");
+
+        if(sonidoOlas){
+            sonidoOlas.play();
+        }
+
+        if(musica){
+            musica.play();
+        }
+
+        document.querySelector(".contenido-marino")
+        .scrollIntoView({
+            behavior:"smooth"
+        });
+
+    });
+
+}
