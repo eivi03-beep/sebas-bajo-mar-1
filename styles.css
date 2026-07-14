@@ -151,3 +151,162 @@ section{
     text-align:center;
 
 }
+
+/* ==========================
+   BIENVENIDA
+========================== */
+
+
+.bienvenida{
+
+    background:rgba(255,255,255,.75);
+
+    max-width:700px;
+
+    margin:auto;
+
+    padding:40px 20px;
+
+    border-radius:30px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+
+
+.bienvenida img{
+
+    width:340px;
+
+    height:340px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:10px solid white;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+    margin-bottom:25px;
+
+}
+
+
+
+.bienvenida h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:55px;
+
+    color:#087ea4;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.bienvenida p{
+
+    font-size:17px;
+
+    line-height:1.6;
+
+}
+
+
+
+
+/* ==========================
+   CONTADOR
+========================== */
+
+
+.contador{
+
+    margin:50px auto;
+
+    max-width:700px;
+
+    background:rgba(255,255,255,.8);
+
+    padding:35px 20px;
+
+    border-radius:30px;
+
+}
+
+
+
+.contador h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:55px;
+
+    color:#087ea4;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.tiempo{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.tiempo div{
+
+    background:white;
+
+    width:100px;
+
+    height:100px;
+
+    border-radius:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.15);
+
+}
+
+
+
+.tiempo span{
+
+    font-size:35px;
+
+    font-weight:700;
+
+    color:#087ea4;
+
+}
+
+
+
+.tiempo small{
+
+    font-size:14px;
+
+}
