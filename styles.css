@@ -540,53 +540,55 @@ footer{
 
 
 
-/* ==========================
-   RESPONSIVE CELULAR
-========================== */
+/* CUADROS SOBRE Y REGALO */
+
+.opciones-regalo{
+
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+
+}
 
 
-@media(max-width:600px){
+.tarjeta-regalo,
+.sobre,
+.obsequio{
+
+    width:220px;
+    height:180px;
+
+    background:white;
+
+    border-radius:25px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
 
 
-    .contenido-portada h1{
+.tarjeta-regalo div,
+.sobre div,
+.obsequio div{
 
-        font-size:65px;
+    font-size:60px;
+    margin-bottom:10px;
 
-    }
-
-
-    .contenido-portada h2{
-
-        font-size:35px;
-
-    }
+}
 
 
-    .bienvenida img{
+.tarjeta-regalo h3,
+.sobre h3,
+.obsequio h3{
 
-        width:260px;
-
-        height:260px;
-
-    }
-
-
-    .bienvenida h2,
-    .contador h2,
-    .ubicacion h2,
-    .regalo h2,
-    .confirmacion h2{
-
-        font-size:45px;
-
-    }
-
-
-    .tarjeta-regalo{
-
-        width:200px;
-
-    }
-
+    color:#087ea4;
+    font-size:22px;
+    letter-spacing:2px;
 
 }
