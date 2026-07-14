@@ -1,36 +1,71 @@
-const boton = document.getElementById("entrar");
+// ===============================
+// INVITACIÓN SEBASTIÁN BAJO EL MAR
+// Funciones: música, olas y cuenta regresiva
+// ===============================
 
-const olas = document.getElementById("sonidoOlas");
-const musica = document.getElementById("musica");
+
+// 🎵 Música de entrada
+window.addEventListener("load", () => {
+
+    const musica = document.getElementById("musica");
+
+    if (musica) {
+        musica.volume = 0.5;
+
+        musica.play().catch(() => {
+            console.log("El navegador espera interacción del usuario para iniciar la música.");
+        });
+    }
 
 
-boton.addEventListener("click", function(){
+    // 🌊 Sonido de olas
+    const olas = document.getElementById("olas");
 
-    olas.volume = 0.4;
-    musica.volume = 0.3;
+    if (olas) {
+        olas.volume = 0.4;
 
-    olas.play();
-    musica.play();
-
-    document.querySelector(".bienvenida").scrollIntoView({
-        behavior:"smooth"
-    });
+        olas.play().catch(() => {
+            console.log("El navegador espera interacción para iniciar las olas.");
+        });
+    }
 
 });
-// CONTADOR REGRESIVO
+
+
+
+// ⏳ Cuenta regresiva automática
 
 const fechaEvento = new Date("August 25, 2026 15:00:00").getTime();
 
-const contador = setInterval(function(){
+
+const contador = setInterval(() => {
 
     const ahora = new Date().getTime();
 
     const distancia = fechaEvento - ahora;
 
-    const dias = Math.floor(distancia / (1000 * 60 * 60 * 24));
-    const horas = Math.floor((distancia % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutos = Math.floor((distancia % (1000 * 60 * 60)) / (1000 * 60));
-    const segundos = Math.floor((distancia % (1000 * 60)) / 1000);
+
+    const dias = Math.floor(
+        distancia / (1000 * 60 * 60 * 24)
+    );
+
+
+    const horas = Math.floor(
+        (distancia % (1000 * 60 * 60 * 24)) /
+        (1000 * 60 * 60)
+    );
+
+
+    const minutos = Math.floor(
+        (distancia % (1000 * 60 * 60)) /
+        (1000 * 60)
+    );
+
+
+    const segundos = Math.floor(
+        (distancia % (1000 * 60)) /
+        1000
+    );
 
 
     document.getElementById("dias").innerHTML = dias;
@@ -39,4 +74,15 @@ const contador = setInterval(function(){
     document.getElementById("segundos").innerHTML = segundos;
 
 
-},1000);
+
+    if (distancia < 0) {
+
+        clearInterval(contador);
+
+        document.getElementById("contador").innerHTML =
+        "🎉 ¡El gran día llegó!";
+
+    }
+
+
+}, 1000);
