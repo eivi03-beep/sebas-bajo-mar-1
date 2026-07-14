@@ -310,3 +310,283 @@ section{
     font-size:14px;
 
 }
+
+/* ==========================
+   UBICACIÓN
+========================== */
+
+
+.ubicacion{
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    background:rgba(255,255,255,.8);
+
+    padding:35px 20px;
+
+    border-radius:30px;
+
+}
+
+
+
+.ubicacion h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:55px;
+
+    color:#087ea4;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.ubicacion a{
+
+    display:inline-block;
+
+    padding:12px 30px;
+
+    background:#087ea4;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+}
+
+
+
+
+/* ==========================
+   LLUVIA DE SOBRES
+========================== */
+
+
+.regalo{
+
+    max-width:700px;
+
+    margin:50px auto;
+
+    background:rgba(255,255,255,.8);
+
+    padding:40px 20px;
+
+    border-radius:30px;
+
+}
+
+
+
+.regalo h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:60px;
+
+    color:#087ea4;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.opciones-regalo{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.tarjeta-regalo{
+
+    width:220px;
+
+    height:180px;
+
+    background:white;
+
+    border-radius:25px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.15);
+
+}
+
+
+
+.tarjeta-regalo div{
+
+    font-size:60px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.tarjeta-regalo h3{
+
+    color:#087ea4;
+
+    font-size:22px;
+
+    letter-spacing:2px;
+
+}
+
+/* ==========================
+   CONFIRMACIÓN
+========================== */
+
+
+.confirmacion{
+
+    max-width:700px;
+
+    margin:50px auto;
+
+    background:rgba(255,255,255,.8);
+
+    padding:40px 20px;
+
+    border-radius:30px;
+
+}
+
+
+
+.confirmacion h2{
+
+    font-family:'Great Vibes', cursive;
+
+    font-size:60px;
+
+    color:#087ea4;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.boton-whatsapp{
+
+    display:inline-block;
+
+    padding:15px 35px;
+
+    background:#25d366;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+
+
+/* ==========================
+   FOOTER
+========================== */
+
+
+footer{
+
+    max-width:700px;
+
+    margin:40px auto 0;
+
+    padding:25px;
+
+    color:#12344d;
+
+    font-size:16px;
+
+    line-height:1.6;
+
+}
+
+
+
+/* ==========================
+   RESPONSIVE CELULAR
+========================== */
+
+
+@media(max-width:600px){
+
+
+    .contenido-portada h1{
+
+        font-size:65px;
+
+    }
+
+
+    .contenido-portada h2{
+
+        font-size:35px;
+
+    }
+
+
+    .bienvenida img{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+
+    .bienvenida h2,
+    .contador h2,
+    .ubicacion h2,
+    .regalo h2,
+    .confirmacion h2{
+
+        font-size:45px;
+
+    }
+
+
+    .tarjeta-regalo{
+
+        width:200px;
+
+    }
+
+
+}
