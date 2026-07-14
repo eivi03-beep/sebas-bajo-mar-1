@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -10,263 +8,176 @@
 
 <link rel="stylesheet" href="styles.css">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
-<!-- Audios -->
-
-<audio id="sonidoOlas" preload="auto">
-    <source src="assets/audio/olas.mp3" type="audio/mp3">
-</audio>
-
-<audio id="musica" loop>
-    <source src="assets/audio/bajo-el-mar.mp3" type="audio/mp3">
-</audio>
-
-<!-- ========================= -->
 <!-- PORTADA -->
-<!-- ========================= -->
-
 <section class="portada">
 
-<div class="burbujas">
+    <div class="contenido-portada">
 
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
-<span></span>
+        <h3>PRIMER CUMPLEAÑOS</h3>
 
-</div>
+        <h1>Bajo el Mar</h1>
 
-<div class="contenido">
+        <h2>Sebastián</h2>
 
-<h3>PRIMER CUMPLEAÑOS</h3>
+        <p>
+        Una aventura submarina para celebrar mi primer añito.
+        </p>
 
-<h1>Bajo el Mar</h1>
+        <button onclick="entrarFiesta()">
+            Entrar a la Fiesta 🌊
+        </button>
 
-<h2>Sebastián</h2>
-
-<p>
-Una aventura submarina para celebrar
-mi primer añito.
-</p>
-
-<button id="entrar">
-
-🐚 Entrar a la aventura
-
-</button>
-
-</div>
-
-<div class="olas"></div>
+    </div>
 
 </section>
 
-<!-- ========================= -->
-<!-- CONTENIDO -->
-<!-- ========================= -->
 
-<main class="contenido-marino">
+<!-- INVITACIÓN -->
 
-<!-- Bienvenida -->
+<section class="invitacion">
 
-<section class="bienvenida">
+    <div class="bienvenida">
 
-<div class="marco-foto">
+        <img src="assets/foto-sebastian.jpg" alt="Sebastián">
 
-<div class="concha izquierda">🐚</div>
+        <h2>¡Mi primer cumpleaños!</h2>
 
-<img src="assets/img/foto-sebastian.jpg" alt="Sebastián">
+        <p>
+        Acompáñame a celebrar un día lleno de amor,
+        alegría y magia bajo el mar.
+        </p>
 
-<div class="concha derecha">🐚</div>
+    </div>
 
-<div class="estrella">⭐</div>
 
-</div>
 
-<h2>
+    <!-- CUENTA REGRESIVA -->
 
-¡Mi Primer Cumpleaños!
+    <section class="contador">
 
-</h2>
+        <h2>Faltan...</h2>
 
-<p>
+        <div class="tiempo">
 
-Gracias por acompañarme
-en esta gran aventura
-bajo el mar.
+            <div>
+                <span id="dias">0</span>
+                <small>Días</small>
+            </div>
 
-</p>
+            <div>
+                <span id="horas">0</span>
+                <small>Horas</small>
+            </div>
 
-</section>
+            <div>
+                <span id="minutos">0</span>
+                <small>Minutos</small>
+            </div>
 
-<!-- Cuenta -->
+            <div>
+                <span id="segundos">0</span>
+                <small>Segundos</small>
+            </div>
 
-<section class="cuenta">
+        </div>
 
-<h2>
+    </section>
 
-Faltan...
 
-</h2>
 
-<div class="contador">
+    <!-- UBICACIÓN -->
 
-<div>
+    <section class="ubicacion">
 
-<span id="dias">00</span>
+        <h2>📍 Lugar de la Fiesta</h2>
 
-<p>Días</p>
+        <a href="#" target="_blank">
+            Cómo llegar
+        </a>
 
-</div>
+    </section>
 
-<div>
 
-<span id="horas">00</span>
 
-<p>Horas</p>
+    <!-- LLUVIA DE SOBRES -->
 
-</div>
+    <section class="regalo">
 
-<div>
+        <h2>Lluvia de Sobres</h2>
 
-<span id="minutos">00</span>
+        <div class="opciones-regalo">
 
-<p>Minutos</p>
+            <div class="tarjeta-regalo sobre">
 
-</div>
+                <div>💌</div>
 
-<div>
+                <h3>SOBRE</h3>
 
-<span id="segundos">00</span>
+            </div>
 
-<p>Segundos</p>
 
-</div>
+            <div class="tarjeta-regalo regalo">
 
-</div>
+                <div>🎁</div>
 
-<h3>
+                <h3>REGALO</h3>
 
-📅 Martes 25 de agosto de 2026
+            </div>
 
-<br>
+        </div>
 
-🕒 3:00 PM
+    </section>
 
-</h3>
 
-</section>
 
-<!-- Ubicación -->
+    <!-- CONFIRMACIÓN -->
 
-<section class="ubicacion">
+    <section class="confirmacion">
 
-<h2>
+        <h2>Confirma tu asistencia</h2>
 
-¿Dónde será la aventura?
+        <a href="#" class="boton-whatsapp">
+            Confirmar por WhatsApp 💙
+        </a>
 
-</h2>
+    </section>
 
-<p>
 
-📍 Emiliano Zapata 303
 
-<br>
+    <footer>
 
-Alejandro Briones
+        <p>
+        Gracias por acompañarnos en este día tan especial.
+        Esperamos compartir contigo esta hermosa aventura bajo el mar. 🌊🐚⭐
+        </p>
 
-<br>
+    </footer>
 
-Altamira, Tamaulipas
-
-</p>
-
-<a href="https://maps.google.com/?q=Emiliano+Zapata+303+Alejandro+Briones+Altamira+Tamaulipas" target="_blank">
-
-🗺️ Cómo llegar
-
-</a>
 
 </section>
 
-<!-- Regalo -->
 
-<section class="regalo">
 
-<h2>
+<!-- AUDIO -->
 
-Lluvia de Sobres
+<audio id="musica" loop>
+    <source src="assets/audio/bajo-el-mar.mp3" type="audio/mpeg">
+</audio>
 
-</h2>
 
-<p>
+<audio id="olas" loop>
+    <source src="assets/audio/olas.mp3" type="audio/mpeg">
+</audio>
 
-Tu presencia será mi mejor regalo.
-
-<br>
-
-Si deseas obsequiarme algo,
-
-podrás hacerlo en un sobre.
-
-💌
-
-</p>
-
-</section>
-
-<!-- Confirmación -->
-
-<section class="confirmacion">
-
-<h2>
-
-Confirma tu asistencia
-
-</h2>
-
-<p>
-
-Será un gusto compartir
-
-este día contigo.
-
-</p>
-
-<a href="https://wa.me/528334532709?text=Hola,%20confirmo%20mi%20asistencia%20al%20cumpleaños%20de%20Sebastián" target="_blank">
-
-📱 Confirmar por WhatsApp
-
-</a>
-
-<p class="despedida">
-
-¡Te esperamos para vivir
-
-una gran aventura
-
-bajo el mar!
-
-🌊🐚⭐
-
-</p>
-
-</section>
-
-</main>
 
 <script src="script.js"></script>
 
-</body>
 
+</body>
 </html>
