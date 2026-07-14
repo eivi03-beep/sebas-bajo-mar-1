@@ -8,18 +8,20 @@
     box-sizing:border-box;
 }
 
+
 body{
 
     font-family:'Poppins', sans-serif;
-    background:#f8f0df;
     color:#12344d;
 
 }
 
 
 section{
+
     width:100%;
     overflow:hidden;
+
 }
 
 
@@ -28,17 +30,22 @@ section{
    PORTADA
 ========================== */
 
+
 .portada{
 
     height:100vh;
     min-height:700px;
 
     background-image:url("assets/fondo-marino.png");
+
     background-size:cover;
+
     background-position:center;
 
     display:flex;
+
     justify-content:center;
+
     align-items:center;
 
     text-align:center;
@@ -52,12 +59,12 @@ section{
 .contenido-portada{
 
     width:90%;
+
     max-width:600px;
 
     color:white;
 
-    text-shadow:
-    0 3px 10px rgba(0,0,0,.5);
+    text-shadow:0 3px 10px rgba(0,0,0,.5);
 
 }
 
@@ -66,7 +73,9 @@ section{
 .contenido-portada h3{
 
     font-size:20px;
+
     letter-spacing:3px;
+
     margin-bottom:15px;
 
 }
@@ -81,7 +90,7 @@ section{
 
     font-weight:400;
 
-    margin-bottom:5px;
+    margin-bottom:10px;
 
 }
 
@@ -134,7 +143,7 @@ section{
 
 
 /* ==========================
-   SECCIÓN INVITACIÓN
+   FONDO DE TODA LA INVITACIÓN
 ========================== */
 
 
@@ -146,6 +155,8 @@ section{
 
     background-position:center;
 
+    background-repeat:repeat-y;
+
     padding:60px 20px;
 
     text-align:center;
@@ -153,17 +164,17 @@ section{
 }
 
 /* ==========================
-   BIENVENIDA
+   BIENVENIDA - FOTO SEBASTIÁN
 ========================== */
 
 
 .bienvenida{
 
-    background:rgba(255,255,255,.75);
-
     max-width:700px;
 
     margin:auto;
+
+    background:rgba(255,255,255,.78);
 
     padding:40px 20px;
 
@@ -219,19 +230,18 @@ section{
 
 
 
-
 /* ==========================
-   CONTADOR
+   CUENTA REGRESIVA
 ========================== */
 
 
 .contador{
 
-    margin:50px auto;
-
     max-width:700px;
 
-    background:rgba(255,255,255,.8);
+    margin:50px auto;
+
+    background:rgba(255,255,255,.78);
 
     padding:35px 20px;
 
@@ -271,11 +281,11 @@ section{
 
 .tiempo div{
 
-    background:white;
-
     width:100px;
 
     height:100px;
+
+    background:white;
 
     border-radius:20px;
 
@@ -322,7 +332,7 @@ section{
 
     margin:40px auto;
 
-    background:rgba(255,255,255,.8);
+    background:rgba(255,255,255,.78);
 
     padding:35px 20px;
 
@@ -366,7 +376,6 @@ section{
 
 
 
-
 /* ==========================
    LLUVIA DE SOBRES
 ========================== */
@@ -378,7 +387,7 @@ section{
 
     margin:50px auto;
 
-    background:rgba(255,255,255,.8);
+    background:rgba(255,255,255,.78);
 
     padding:40px 20px;
 
@@ -416,7 +425,9 @@ section{
 
 
 
-.tarjeta-regalo{
+.tarjeta-regalo,
+.sobre,
+.obsequio{
 
     width:220px;
 
@@ -440,7 +451,9 @@ section{
 
 
 
-.tarjeta-regalo div{
+.tarjeta-regalo div,
+.sobre div,
+.obsequio div{
 
     font-size:60px;
 
@@ -450,7 +463,9 @@ section{
 
 
 
-.tarjeta-regalo h3{
+.tarjeta-regalo h3,
+.sobre h3,
+.obsequio h3{
 
     color:#087ea4;
 
@@ -471,7 +486,7 @@ section{
 
     margin:50px auto;
 
-    background:rgba(255,255,255,.8);
+    background:rgba(255,255,255,.78);
 
     padding:40px 20px;
 
@@ -518,7 +533,7 @@ section{
 
 
 /* ==========================
-   FOOTER
+   FINAL
 ========================== */
 
 
@@ -540,55 +555,54 @@ footer{
 
 
 
-/* CUADROS SOBRE Y REGALO */
-
-.opciones-regalo{
-
-    display:flex;
-    justify-content:center;
-    gap:25px;
-    flex-wrap:wrap;
-
-}
+/* ==========================
+   CELULAR
+========================== */
 
 
-.tarjeta-regalo,
-.sobre,
-.obsequio{
-
-    width:220px;
-    height:180px;
-
-    background:white;
-
-    border-radius:25px;
-
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-
-}
+@media(max-width:600px){
 
 
-.tarjeta-regalo div,
-.sobre div,
-.obsequio div{
+    .contenido-portada h1{
 
-    font-size:60px;
-    margin-bottom:10px;
+        font-size:65px;
 
-}
+    }
 
 
-.tarjeta-regalo h3,
-.sobre h3,
-.obsequio h3{
+    .contenido-portada h2{
 
-    color:#087ea4;
-    font-size:22px;
-    letter-spacing:2px;
+        font-size:35px;
+
+    }
+
+
+    .bienvenida img{
+
+        width:260px;
+
+        height:260px;
+
+    }
+
+
+    .bienvenida h2,
+    .contador h2,
+    .ubicacion h2,
+    .regalo h2,
+    .confirmacion h2{
+
+        font-size:45px;
+
+    }
+
+
+    .tarjeta-regalo,
+    .sobre,
+    .obsequio{
+
+        width:200px;
+
+    }
 
 }
