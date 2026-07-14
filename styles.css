@@ -1,149 +1,123 @@
+/* ===========================
+   RESET
+=========================== */
+
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:'Poppins',sans-serif;
-    background:#F8F4ED;
+    background:#F4FBFF;
+    color:#35556A;
     overflow-x:hidden;
 }
 
+/* ===========================
+   PORTADA
+=========================== */
+
 .portada{
+    position:relative;
+    width:100%;
     min-height:100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
+    overflow:hidden;
 
-    background-image:url("fondo-mar.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-
-    position:relative;
-    padding:20px;
+    background:url("assets/fondo-mar.png") center center/cover no-repeat;
 }
 
 .contenido{
-    max-width:650px;
-    z-index:2;
+    position:relative;
+    z-index:5;
+    max-width:700px;
+    padding:20px;
 }
 
-h3{
-    color:#5B7E91;
+.contenido h3{
+    color:#5A8298;
     letter-spacing:6px;
     font-size:18px;
-    font-weight:500;
+    font-weight:600;
     margin-bottom:20px;
 }
 
-h1{
+.contenido h1{
     font-family:'Great Vibes',cursive;
-    font-size:78px;
-    color:#2F6F8F;
-    font-weight:normal;
+    font-size:90px;
+    color:#2D6E8E;
+    margin-bottom:10px;
 }
 
-h2{
+.contenido h2{
     font-size:55px;
-    color:#2F6F8F;
-    margin-top:10px;
+    color:#2D6E8E;
+    margin-bottom:25px;
 }
 
-p{
-    margin:25px 0;
-    font-size:21px;
-    color:#6B7B87;
-    line-height:1.7;
+.contenido p{
+    font-size:22px;
+    color:#5F7383;
+    line-height:1.8;
+    margin-bottom:40px;
 }
 
-button{
-    background:#4E7F98;
-    color:white;
+#entrar{
+    background:#4A87A3;
+    color:#fff;
     border:none;
-    border-radius:40px;
     padding:18px 45px;
+    border-radius:40px;
     font-size:20px;
     cursor:pointer;
-    transition:.3s;
-    box-shadow:0 10px 25px rgba(0,0,0,.15);
+    transition:.35s;
+    box-shadow:0 10px 25px rgba(0,0,0,.20);
 }
 
-button:hover{
+#entrar:hover{
     transform:translateY(-4px);
-    background:#3E6D84;
+    background:#396E86;
 }
 
-@media(max-width:768px){
+/* ===========================
+   BURBUJAS
+=========================== */
 
-    h1{
-        font-size:58px;
-    }
-
-    h2{
-        font-size:42px;
-    }
-
-    p{
-        font-size:18px;
-    }
-
-    button{
-        width:100%;
-    }
-
+.burbujas{
+    position:absolute;
+    inset:0;
+    overflow:hidden;
 }
-/* Burbujas submarinas */
 
 .burbujas span{
     position:absolute;
-    bottom:-100px;
-    width:35px;
-    height:35px;
-    border:2px solid rgba(255,255,255,.6);
+    bottom:-120px;
+    width:28px;
+    height:28px;
     border-radius:50%;
-    animation:subir 12s infinite;
+    border:2px solid rgba(255,255,255,.55);
+    animation:subir 16s linear infinite;
 }
 
-.burbujas span:nth-child(1){
-    left:10%;
-    animation-delay:0s;
-}
-
-.burbujas span:nth-child(2){
-    left:30%;
-    width:20px;
-    height:20px;
-    animation-delay:3s;
-}
-
-.burbujas span:nth-child(3){
-    left:50%;
-    width:45px;
-    height:45px;
-    animation-delay:6s;
-}
-
-.burbujas span:nth-child(4){
-    left:70%;
-    width:25px;
-    height:25px;
-    animation-delay:2s;
-}
-
-.burbujas span:nth-child(5){
-    left:85%;
-    width:18px;
-    height:18px;
-    animation-delay:5s;
-}
-
+.burbujas span:nth-child(1){left:8%;}
+.burbujas span:nth-child(2){left:24%;animation-delay:2s;}
+.burbujas span:nth-child(3){left:42%;animation-delay:5s;}
+.burbujas span:nth-child(4){left:63%;animation-delay:1s;}
+.burbujas span:nth-child(5){left:82%;animation-delay:7s;}
+.burbujas span:nth-child(6){left:94%;animation-delay:4s;}
 
 @keyframes subir{
 
-    0%{
+    from{
         transform:translateY(0);
         opacity:0;
     }
@@ -152,15 +126,16 @@ button:hover{
         opacity:1;
     }
 
-    100%{
-        transform:translateY(-110vh);
+    to{
+        transform:translateY(-120vh);
         opacity:0;
     }
 
 }
 
-
-/* Olas inferiores */
+/* ===========================
+   OLAS
+=========================== */
 
 .olas{
     position:absolute;
@@ -168,302 +143,299 @@ button:hover{
     left:0;
     width:100%;
     height:120px;
-    background:#8FC7D8;
+    background:#8DD5E4;
     border-radius:50% 50% 0 0;
-    opacity:.8;
-    z-index:1;
+    opacity:.85;
 }
 
-/* Sección bienvenida */
+/* ===========================
+   CONTENIDO MARINO
+=========================== */
 
-.bienvenida{
-    min-height:300vh;
-    text-align:center;
-    padding:70px 20px;
+.contenido-marino{
+
+    background:linear-gradient(
+    to bottom,
+    #EAF9FF 0%,
+    #D5F2FB 30%,
+    #BEEAF7 60%,
+    #A8E0F2 100%
+    );
+
     position:relative;
     overflow:hidden;
 }
 
-.fondo-invitacion{
-    background:transparent;
-}
+/* ===========================
+   BIENVENIDA
+=========================== */
 
-.bienvenida img{
-    width:340px;
-    height:340px;
-    object-fit:cover;
-    border-radius:50%;
-    border:10px solid white;
-    box-shadow:0 15px 35px rgba(0,0,0,.20);
-    margin-bottom:30px;
-}
-
-.bienvenida h2{
-    font-family:'Great Vibes',cursive;
-    font-size:60px;
-    color:#2F6F8F;
-    margin-bottom:20px;
-}
-
-.bienvenida p{
-    max-width:600px;
-    margin:auto;
-    font-size:22px;
-    color:#6B7B87;
-}
-/* Cuenta regresiva */
-
-.cuenta{
-    min-height:60vh;
-    background:transparent;
+.bienvenida{
     text-align:center;
-    padding:60px 20px;
-}
-
-.cuenta h2{
-    font-family:'Great Vibes',cursive;
-    font-size:60px;
-    color:#2F6F8F;
-    margin-bottom:35px;
-}
-
-.contador{
-    display:flex;
-    justify-content:center;
-    gap:20px;
-    flex-wrap:wrap;
-}
-
-.contador div{
-    background:white;
-    width:120px;
-    height:120px;
-    border-radius:20px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
-}
-
-.contador span{
-    font-size:40px;
-    color:#2F6F8F;
-    font-weight:600;
-}
-
-.contador p{
-    margin:0;
-    font-size:16px;
-    color:#6B7B87;
-}
-
-.cuenta h3{
-    margin-top:35px;
-    color:#5B7E91;
-    font-size:20px;
-    letter-spacing:1px;
-}
-/* Ubicación */
-
-.ubicacion{
-    min-height:60vh;
-    background:transparent;
-    text-align:center;
-    padding:70px 20px;
-}
-
-.ubicacion h2{
-    font-family:'Great Vibes',cursive;
-    font-size:60px;
-    color:#2F6F8F;
-    margin-bottom:30px;
-}
-
-.ubicacion p{
-    font-size:22px;
-    color:#6B7B87;
-    line-height:1.8;
-}
-
-.ubicacion a{
-    display:inline-block;
-    margin-top:25px;
-    background:#4E7F98;
-    color:white;
-    text-decoration:none;
-    padding:15px 40px;
-    border-radius:40px;
-    font-size:20px;
-    transition:.3s;
-}
-
-.ubicacion a:hover{
-    transform:translateY(-4px);
-    background:#3E6D84;
-}
-/* Regalo / Sobre */
-
-.sobres{
-    min-height:55vh;
-    background:transparent;
-    text-align:center;
-    padding:70px 20px;
-}
-
-.sobres h2{
-    font-family:'Great Vibes',cursive;
-    font-size:60px;
-    color:#2F6F8F;
-    margin-bottom:25px;
-}
-
-.sobres p{
-    color:#6B7B87;
-    font-size:21px;
-    line-height:1.7;
-}
-
-.opciones-regalo{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    margin-top:35px;
-    flex-wrap:wrap;
-}
-
-.opciones-regalo div{
-    background:white;
-    width:160px;
-    height:160px;
-    border-radius:25px;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    box-shadow:0 8px 20px rgba(0,0,0,.12);
-    font-size:50px;
-}
-
-.opciones-regalo h3{
-    margin-top:10px;
-    color:#5B7E91;
-    font-size:22px;
-    letter-spacing:1px;
-}
-/* Confirmación */
-
-.confirmacion{
-    min-height:55vh;
-    background:transparent;
-    text-align:center;
-    padding:70px 20px;
-}
-
-.confirmacion h2{
-    font-family:'Great Vibes',cursive;
-    font-size:60px;
-    color:#2F6F8F;
-    margin-bottom:25px;
-}
-
-.confirmacion p{
-    font-size:22px;
-    color:#6B7B87;
-    line-height:1.7;
-}
-
-.confirmacion a{
-    display:inline-block;
-    margin-top:30px;
-    background:#4E7F98;
-    color:white;
-    text-decoration:none;
-    padding:16px 40px;
-    border-radius:40px;
-    font-size:20px;
-    transition:.3s;
-    box-shadow:0 8px 20px rgba(0,0,0,.15);
-}
-
-.confirmacion a:hover{
-    transform:translateY(-4px);
-    background:#3E6D84;
-}
-/* Decoración submarina */
-
-.decoracion-mar{
-    position:absolute;
-    bottom:0;
-    left:0;
-    width:100%;
-    height:220px;
-    pointer-events:none;
-    z-index:1;
-    overflow:hidden;
+    padding:90px 20px 70px;
 }
 
 .marco-foto{
     position:relative;
     display:inline-block;
+    margin-bottom:40px;
 }
 
-.concha-foto{
+.marco-foto img{
+    width:330px;
+    height:330px;
+    object-fit:cover;
+    border-radius:50%;
+    border:10px solid #fff;
+    box-shadow:0 15px 40px rgba(0,0,0,.18);
+}
+
+.concha{
     position:absolute;
     font-size:55px;
-    z-index:2;
 }
 
 .izquierda{
-    left:-60px;
-    bottom:40px;
+    left:-55px;
+    bottom:30px;
 }
 
 .derecha{
-    right:-60px;
-    top:40px;
+    right:-55px;
+    top:30px;
 }
 
-.burbuja-foto{
+.estrella{
     position:absolute;
-    font-size:35px;
-    z-index:3;
-    animation:flotarBurbuja 4s ease-in-out infinite;
-}
-
-.b1{
-    left:20px;
-    top:-25px;
-}
-
-.b2{
-    right:20px;
+    right:-10px;
     bottom:-20px;
-    animation-delay:2s;
+    font-size:42px;
 }
 
-@keyframes flotarBurbuja{
-    0%,100%{
-        transform:translateY(0);
-    }
-
-    50%{
-        transform:translateY(-15px);
-    }
+.bienvenida h2{
+    font-family:'Great Vibes',cursive;
+    font-size:64px;
+    color:#2D6E8E;
+    margin-bottom:20px;
 }
-.despedida{
-    margin-top:35px;
+
+.bienvenida p{
+    max-width:650px;
+    margin:auto;
+    line-height:1.8;
     font-size:22px;
-    color:#5B7E91;
-    line-height:1.7;
+    color:#5B7180;
+}
+/* ===========================
+   CUENTA REGRESIVA
+=========================== */
+
+.cuenta{
+    padding:80px 20px;
     text-align:center;
-    max-width:600px;
-    margin-left:auto;
-    margin-right:auto;
 }
 
-.fondo-invitacion{
-    background-image:url("fondo-invitacion.png");
-    background-size:cover;
-    background-position:center top;
-    background-repeat:repeat-y;
+.cuenta h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2D6E8E;
+    margin-bottom:40px;
+}
+
+.contador{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+}
+
+.contador div{
+    width:120px;
+    height:120px;
+    background:#fff;
+    border-radius:22px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+}
+
+.contador span{
+    font-size:42px;
+    font-weight:bold;
+    color:#2D6E8E;
+}
+
+.contador p{
+    margin-top:8px;
+    font-size:17px;
+    color:#6A7E8C;
+}
+
+.cuenta h3{
+    margin-top:40px;
+    color:#4E738A;
+    line-height:1.8;
+}
+
+/* ===========================
+   UBICACIÓN
+=========================== */
+
+.ubicacion{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.ubicacion h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2D6E8E;
+    margin-bottom:25px;
+}
+
+.ubicacion p{
+    font-size:22px;
+    line-height:1.8;
+    color:#5B7180;
+}
+
+.ubicacion a{
+    display:inline-block;
+    margin-top:30px;
+    padding:16px 42px;
+    background:#4A87A3;
+    color:#fff;
+    text-decoration:none;
+    border-radius:40px;
+    transition:.3s;
+}
+
+.ubicacion a:hover{
+    background:#396E86;
+    transform:translateY(-3px);
+}
+
+/* ===========================
+   REGALO
+=========================== */
+
+.regalo{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.regalo h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2D6E8E;
+    margin-bottom:25px;
+}
+
+.regalo p{
+    max-width:700px;
+    margin:auto;
+    line-height:1.8;
+    font-size:22px;
+    color:#5B7180;
+}
+
+/* ===========================
+   CONFIRMACIÓN
+=========================== */
+
+.confirmacion{
+    padding:80px 20px 120px;
+    text-align:center;
+}
+
+.confirmacion h2{
+    font-family:'Great Vibes',cursive;
+    font-size:60px;
+    color:#2D6E8E;
+    margin-bottom:25px;
+}
+
+.confirmacion p{
+    font-size:22px;
+    line-height:1.8;
+    color:#5B7180;
+}
+
+.confirmacion a{
+    display:inline-block;
+    margin-top:35px;
+    padding:18px 45px;
+    background:#25D366;
+    color:#fff;
+    text-decoration:none;
+    border-radius:45px;
+    font-size:20px;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+
+.confirmacion a:hover{
+    transform:translateY(-3px);
+}
+
+.despedida{
+    margin-top:45px;
+    font-size:20px;
+    color:#2D6E8E;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:768px){
+
+    .contenido h1{
+        font-size:65px;
+    }
+
+    .contenido h2{
+        font-size:42px;
+    }
+
+    .contenido p{
+        font-size:18px;
+    }
+
+    #entrar{
+        width:100%;
+    }
+
+    .marco-foto img{
+        width:260px;
+        height:260px;
+    }
+
+    .concha{
+        display:none;
+    }
+
+    .bienvenida h2,
+    .cuenta h2,
+    .ubicacion h2,
+    .regalo h2,
+    .confirmacion h2{
+        font-size:48px;
+    }
+
+    .contador{
+        gap:15px;
+    }
+
+    .contador div{
+        width:100px;
+        height:100px;
+    }
+
+    .contador span{
+        font-size:34px;
+    }
+
 }
