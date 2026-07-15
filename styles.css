@@ -633,3 +633,16 @@ footer{
     -webkit-text-fill-color:#004c70 !important;
 
 }
+
+.portada .boton-entrada,
+.portada .boton-entrada:visited{
+
+    background:#ffffff !important;
+
+    color:#006994 !important;
+
+    -webkit-text-fill-color:#006994 !important;
+
+    opacity:1 !important;
+
+}
