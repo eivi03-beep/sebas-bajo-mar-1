@@ -617,6 +617,8 @@ footer{
 
     color:#006994 !important;
 
+    -webkit-text-fill-color:#006994 !important;
+
     font-size:18px;
 
     font-weight:700;
@@ -628,10 +630,6 @@ footer{
 
     color:#004c70 !important;
 
-}
+    -webkit-text-fill-color:#004c70 !important;
 
-.boton-entrada{
-    background:white !important;
-    color:blue !important;
-    -webkit-text-fill-color:blue !important;
 }
