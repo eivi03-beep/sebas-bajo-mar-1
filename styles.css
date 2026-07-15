@@ -646,3 +646,8 @@ footer{
     opacity:1 !important;
 
 }
+
+.boton-entrada span{
+    color:#006994 !important;
+    -webkit-text-fill-color:#006994 !important;
+}
