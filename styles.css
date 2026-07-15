@@ -651,3 +651,13 @@ footer{
     color:#006994 !important;
     -webkit-text-fill-color:#006994 !important;
 }
+
+.contenido-portada,
+.contenido-portada h1,
+.contenido-portada h2,
+.contenido-portada h3,
+.contenido-portada p{
+
+    color:#006994 !important;
+
+}
