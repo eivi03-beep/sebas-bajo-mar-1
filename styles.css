@@ -629,3 +629,9 @@ footer{
     color:#004c70 !important;
 
 }
+
+.boton-entrada{
+    background:white !important;
+    color:blue !important;
+    -webkit-text-fill-color:blue !important;
+}
