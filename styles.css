@@ -610,3 +610,22 @@ footer{
 .contenido-portada button{
     color:#006994 !important;
 }
+
+.boton-entrada{
+
+    background:white !important;
+
+    color:#006994 !important;
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+
+.boton-entrada:hover{
+
+    color:#004c70 !important;
+
+}
